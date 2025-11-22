@@ -17,23 +17,25 @@ export default function Home() {
   return (
     <main className="bg-light">
       <Navbar />
-      <Hero />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="about">
+        <Container className="my-5 py-5">
+          <Row className="align-items-center">
+            <Col md={6} className="mb-4 mb-md-0">
+              <h6 className="text-primary fw-bold text-uppercase">Tentang Saya</h6>
+              <h2 className="display-6 fw-bold mb-3 text-dark">Jansen Vanesco</h2>
+              <p className="text-muted lead">
+                Halo, saya Jansen Vanesco. Saya adalah seorang illustrator dan game developer. Saya berfokus untuk membuat desain karakter orisinal.
+              </p>
+              <p className="text-muted">
+                Saya menggunakan anime untuk art style saya. Aplikasi yang saya gunakan untuk menggambar adalah Clip Studio Paint. Aplikasi yang saya gunakan untuk membuat game adalah Unity 2D
+              </p>
+            </Col>
 
-      <Container className="my-5 py-5">
-        <Row className="align-items-center">
-          <Col md={6} className="mb-4 mb-md-0">
-            <h6 className="text-primary fw-bold text-uppercase">Tentang Saya</h6>
-            <h2 className="display-6 fw-bold mb-3 text-dark">Jansen Vanesco</h2>
-            <p className="text-muted lead">
-              Halo, saya Jansen Vanesco. Saya adalah seorang illustrator dan game developer. Saya berfokus untuk membuat desain karakter orisinal.
-            </p>
-            <p className="text-muted">
-              Saya menggunakan anime untuk art style saya. Aplikasi yang saya gunakan untuk menggambar adalah Clip Studio Paint. Aplikasi yang saya gunakan untuk membuat game adalah Unity 2D
-            </p>
-          </Col>
-
-          <Col md={6} className="text-center">
-            <div className="position-relative d-inline-block">
+            <Col md={6} className="text-center">
+              <div className="position-relative d-inline-block">
                 <div style={{
                   width: '400px',
                   height: '400px',
@@ -41,9 +43,9 @@ export default function Home() {
                   overflow: 'hidden',
                   display: 'inline-block'
                 }}>
-                  <Image 
-                    src="/images/try1.png" 
-                    alt="Artist Avatar" 
+                  <Image
+                    src="/images/try1.png"
+                    alt="Artist Avatar"
                     width={400}
                     height={400}
                     style={{
@@ -53,16 +55,17 @@ export default function Home() {
                     }}
                   />
                 </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
       <section id="works" className="bg-white py-4">
-          <WorkSection />
+        <WorkSection />
       </section>
       <section id="services">
-          <ServiceSection />
+        <ServiceSection />
       </section>
 
       <section id="contact">
