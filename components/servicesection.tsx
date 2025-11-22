@@ -19,7 +19,7 @@ const services = [
         id: 3,
         title: "World Building & Story",
         description: "Menulis world building pada game, novel, atau karakter",
-        icon: "/images/book2.png"
+        icon: "/images/book1.png"
     }
 ];
 
