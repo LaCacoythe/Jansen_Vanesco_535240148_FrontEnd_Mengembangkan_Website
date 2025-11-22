@@ -3,7 +3,7 @@
 // Components
 import Navbar from "../components/navbar";
 import Hero from "../components/herosection";
-import WorkSection from "../components/worksection"; // Pastikan nama file dan export sesuai
+import WorkSection from "../components/worksection";
 import ServiceSection from "../components/servicesection";
 import ContactSection from "../components/contactsection";
 import Footer from "../components/footer";
@@ -19,32 +19,40 @@ export default function Home() {
       <Navbar />
       <Hero />
 
-      {/* About Section */}
       <Container className="my-5 py-5">
         <Row className="align-items-center">
           <Col md={6} className="mb-4 mb-md-0">
-            <h6 className="text-primary fw-bold text-uppercase">About Me</h6>
-            <h2 className="display-6 fw-bold mb-3">Bringing Imagination to Life</h2>
+            <h6 className="text-primary fw-bold text-uppercase">Tentang Saya</h6>
+            <h2 className="display-6 fw-bold mb-3 text-dark">Jansen Vanesco</h2>
             <p className="text-muted lead">
-              Hi, I'm an illustrator specializing in anime-style character design and fantasy backgrounds. 
-              I have been drawing since... (ceritakan sedikit tentangmu).
+              Halo, saya Jansen Vanesco. Saya adalah seorang illustrator dan game developer. Saya berfokus untuk membuat desain karakter orisinal.
             </p>
             <p className="text-muted">
-              I use tools like Clip Studio Paint and Photoshop to create high-quality assets for games, novels, and personal commissions.
+              Saya menggunakan anime untuk art style saya. Aplikasi yang saya gunakan untuk menggambar adalah Clip Studio Paint. Aplikasi yang saya gunakan untuk membuat game adalah Unity 2D
             </p>
-            <Button variant="primary" className="mt-3 px-4 py-2 rounded-pill">Read More About Me</Button>
           </Col>
 
           <Col md={6} className="text-center">
-            <div className="position-relative">
-                <Image 
-                    src="/images/about.png" 
+            <div className="position-relative d-inline-block">
+                <div style={{
+                  width: '400px',
+                  height: '400px',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  display: 'inline-block'
+                }}>
+                  <Image 
+                    src="/images/try1.png" 
                     alt="Artist Avatar" 
-                    width={400} 
+                    width={400}
                     height={400}
-                    className="img-fluid rounded-circle shadow-lg"
-                    style={{objectFit: "cover"}}
-                />
+                    style={{
+                      objectFit: 'cover',
+                      width: '100%',
+                      height: '100%'
+                    }}
+                  />
+                </div>
             </div>
           </Col>
         </Row>
